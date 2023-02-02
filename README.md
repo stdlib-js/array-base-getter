@@ -34,14 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-base-getter
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import getter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-getter@deno/mod.js';
+var getter = require( '@stdlib/array-base-getter' );
 ```
 
 #### getter( dtype )
@@ -89,9 +105,9 @@ The returned accessor function accepts the following arguments:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import filled from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled@deno/mod.js';
-import dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtype@deno/mod.js';
-import getter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-getter@deno/mod.js';
+var filled = require( '@stdlib/array-filled' );
+var dtype = require( '@stdlib/array-dtype' );
+var getter = require( '@stdlib/array-base-getter' );
 
 var arr = filled( 1.0, 10, 'float64' );
 var v = getter( dtype( arr ) )( arr, 2 );
@@ -159,7 +175,7 @@ v = getter( dtype( arr ) )( arr, 2 );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -189,8 +205,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/array-base-getter.svg
 [npm-url]: https://npmjs.org/package/@stdlib/array-base-getter
 
-[test-image]: https://github.com/stdlib-js/array-base-getter/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/array-base-getter/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/array-base-getter/actions/workflows/test.yml/badge.svg?branch=v0.0.1
+[test-url]: https://github.com/stdlib-js/array-base-getter/actions/workflows/test.yml?query=branch:v0.0.1
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/array-base-getter/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/array-base-getter?branch=main
@@ -219,7 +235,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-base-getter/main/LICENSE
 
-[@stdlib/array/dtypes]: https://github.com/stdlib-js/stdlib/tree/deno
+[@stdlib/array/dtypes]: https://github.com/stdlib-js/stdlib
 
 </section>
 
