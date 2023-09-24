@@ -54,7 +54,7 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
-getter = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-getter@umd/browser.js' )
+getter = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-getter@v0.1.0-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -66,7 +66,7 @@ var getter = require( 'path/to/vendor/umd/array-base-getter/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-getter@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-getter@v0.1.0-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -129,7 +129,7 @@ The returned accessor function accepts the following arguments:
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-filled@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-dtype@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-getter@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-getter@v0.1.0-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
