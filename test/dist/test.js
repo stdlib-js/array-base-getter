@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,81 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var filled = require( '@stdlib/array-filled' );
-var dtypes = require( '@stdlib/array-typed-real-dtypes' );
-var getter = require( './../../dist' );
-
-
-// VARIABLES //
-
-var DTYPES = dtypes();
-DTYPES.push( 'generic' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof getter, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function returns a function for returning an array element', function test( t ) {
-	var arr;
-	var get;
-	var dt;
-	var v;
-	var i;
-
-	for ( i = 0; i < DTYPES.length; i++ ) {
-		dt = DTYPES[ i ];
-		get = getter( dt );
-		arr = filled( i+1, 10, dt );
-		v = get( arr, 2 );
-		t.strictEqual( v, i+1, 'returns expected value for dtype: '+dt );
-	}
-	t.end();
-});
-
-tape( 'the function returns a function for returning an array element (unrecognized dtype)', function test( t ) {
-	var arr;
-	var get;
-	var v;
-
-	get = getter( 'foo' );
-	arr = filled( 2, 10, 'generic' );
-	v = get( arr, 2 );
-	t.strictEqual( v, 2, 'returns expected value' );
-
-	t.end();
-});
-
-tape( 'the returned function does not perform bounds checks', function test( t ) {
-	var arr;
-	var get;
-	var dt;
-	var v;
-	var i;
-
-	for ( i = 0; i < DTYPES.length; i++ ) {
-		dt = DTYPES[ i ];
-		get = getter( dt );
-		arr = filled( i+1, 10, dt );
-		v = get( arr, arr.length+10 );
-		t.strictEqual( v, void 0, 'returns expected value for dtype: '+dt );
-	}
-	t.end();
-});
-
-tape( 'the returned function does not perform bounds checks (unrecognized dtype)', function test( t ) {
-	var arr;
-	var get;
-	var v;
-
-	get = getter( 'foo' );
-	arr = filled( 2, 10, 'generic' );
-	v = get( arr, arr.length+10 );
-	t.strictEqual( v, void 0, 'returns expected value' );
-
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
