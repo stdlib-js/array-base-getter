@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import getter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-getter@esm/index.mjs';
+import getter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-getter@v0.2.0-esm/index.mjs';
 ```
 
 #### getter( dtype )
@@ -107,7 +107,7 @@ The returned accessor function accepts the following arguments:
 
 import filled from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled@esm/index.mjs';
 import dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtype@esm/index.mjs';
-import getter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-getter@esm/index.mjs';
+import getter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-getter@v0.2.0-esm/index.mjs';
 
 var arr = filled( 1.0, 10, 'float64' );
 var v = getter( dtype( arr ) )( arr, 2 );
