@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import getter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-getter@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/array-base-getter/tags). For example,
+
+```javascript
 import getter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-getter@v0.2.0-deno/mod.js';
 ```
 
@@ -102,7 +107,7 @@ The returned accessor function accepts the following arguments:
 ```javascript
 import filled from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled@deno/mod.js';
 import dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtype@deno/mod.js';
-import getter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-getter@v0.2.0-deno/mod.js';
+import getter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-getter@deno/mod.js';
 
 var arr = filled( 1.0, 10, 'float64' );
 var v = getter( dtype( arr ) )( arr, 2 );
