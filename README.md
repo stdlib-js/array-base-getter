@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import getter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-getter@deno/mod.js';
+import getter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-getter@v0.2.0-deno/mod.js';
 ```
 
 #### getter( dtype )
@@ -102,7 +102,7 @@ The returned accessor function accepts the following arguments:
 ```javascript
 import filled from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled@deno/mod.js';
 import dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtype@deno/mod.js';
-import getter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-getter@deno/mod.js';
+import getter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-getter@v0.2.0-deno/mod.js';
 
 var arr = filled( 1.0, 10, 'float64' );
 var v = getter( dtype( arr ) )( arr, 2 );
